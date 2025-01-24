@@ -5,6 +5,8 @@
 #  Hotel Reservation System
 
 This is a console application developed using Java Core to manage hotel reservations. It is designed using the MVC (Model-View-Controller) architecture.
+Admin Login - username: admin, password: admin
+Receptionist Login - username: recep, password: recep
 
 ##  Features
 
@@ -112,6 +114,8 @@ Project Link: [https://github.com/cuneytemirr1/hotel-rezervation](https://github
 #  Otel Rezervasyon Sistemi
 
 Bu proje, otel rezervasyonlarını yönetmek için Java Core kullanılarak geliştirilmiş bir konsol uygulamasıdır. MVC (Model-View-Controller) mimarisi kullanılarak tasarlanmıştır.
+Admin Login - username: admin, password: admin
+Receptionist Login - username: recep, password: recep
 
 ##  Özellikler
 
