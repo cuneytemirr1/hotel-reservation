@@ -77,11 +77,25 @@ hotel.rezervation/
 
 ##  Contributing
 
-1. Fork this project
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to your branch (`git push origin feature/AmazingFeature`)
-5. Create a Pull Request
+1. Fork this repository
+2. Clone your forked repository
+```bash
+git clone https://github.com/your-username/hotel-rezervation.git
+```
+3. Create your feature branch
+```bash
+git checkout -b feature/YourAmazingFeature
+```
+4. Make your changes and commit them
+```bash
+git add .
+git commit -m 'Add some YourAmazingFeature'
+```
+5. Push to your branch
+```bash
+git push origin feature/YourAmazingFeature
+```
+6. Open a Pull Request from your repository on GitHub
 
 ## 📝 License
 
@@ -170,11 +184,25 @@ hotel.rezervation/
 
 ##  Katkıda Bulunma
 
-1. Bu projeyi fork edin
-2. Feature branch'i oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inize push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
+1. Bu repository'yi fork edin
+2. Fork ettiğiniz repository'yi bilgisayarınıza klonlayın
+```bash
+git clone https://github.com/kullanıcı-adınız/hotel-rezervation.git
+```
+3. Yeni bir branch oluşturun
+```bash
+git checkout -b özellik/YeniÖzellik
+```
+4. Değişikliklerinizi yapın ve commit edin
+```bash
+git add .
+git commit -m 'Yeni özellik eklendi'
+```
+5. Branch'inize push edin
+```bash
+git push origin özellik/YeniÖzellik
+```
+6. GitHub üzerinden fork ettiğiniz repository'den bir Pull Request oluşturun
 
 ## 📝 Lisans
 
