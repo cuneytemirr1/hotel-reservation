@@ -1,0 +1,15 @@
+package cuneytemirr.hotel.rezervation.view;
+
+public class LoginScreen {
+	
+	private static LoginScreen loginScreen;
+	private LoginScreen() {}
+	private static LoginScreen getLoginScreenInstance() {
+		if (loginScreen == null) {
+			loginScreen = new LoginScreen();
+		}
+		
+		return loginScreen;
+	}
+
+}

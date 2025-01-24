@@ -1,0 +1,17 @@
+package cuneytemirr.hotel.rezervation.view;
+
+public class LoginScreen {
+	
+	// Singleton yapısı
+	private static LoginScreen loginScreen;
+	private LoginScreen() {}
+	public static LoginScreen getLoginScreenInstance() {
+		
+		if (loginScreen == null) {
+			loginScreen = new LoginScreen();
+		}
+		
+		return loginScreen;
+	}
+
+}

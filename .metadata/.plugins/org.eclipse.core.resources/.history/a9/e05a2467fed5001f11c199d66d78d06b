@@ -1,0 +1,12 @@
+package cuneytemirr.hotel.rezervation.model;
+
+public class Room {
+	
+	int roomId;
+	int roomNumber;
+	String category;
+	int capacity;
+	double price;
+	boolean isEmpty;
+
+}

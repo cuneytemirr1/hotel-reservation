@@ -1,0 +1,28 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+import cuneytemirr.hotel.rezervation.model.AnkaraModel;
+import cuneytemirr.hotel.rezervation.model.entity.User;
+import cuneytemirr.hotel.rezervation.model.repository.UserRepository;
+
+public class UserController {
+	
+	private AnkaraModel ankaraModel = AnkaraModel.getAnkaraModelInstance();
+	
+	//Singleton
+	private static UserController userController;
+	private UserController() {}
+	public static UserController getUserControllerInstance() {
+		if (userController == null) {
+			userController = new UserController();
+		}
+		
+		return userController;
+	}
+
+	public void createUser(String username, String password, String role) {
+
+		User user = new User(username, password, role, ankaraModel.getUserRepository().getHighestUserId());
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+package cuneytemirr.hotel.rezervation.utils;
+
+public class ProcessUtils {
+	
+	private static ProcessUtils processUtils;
+	private ProcessUtils() {}
+	public ProcessUtils getProcessUtilsInstance() {
+		if (processUtils == null) {
+			processUtils = new ProcessUtils();
+		}
+		return processUtils;
+	}
+
+}

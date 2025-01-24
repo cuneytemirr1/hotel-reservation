@@ -1,0 +1,18 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+public class UserController {
+	
+	//Singleton
+	private static UserController userController;
+	private UserController() {}
+	public static UserController getUserControllerInstance() {
+		if (userController == null) {
+			userController = new UserController();
+		}
+		
+		return userController;
+	}
+	
+	
+
+}

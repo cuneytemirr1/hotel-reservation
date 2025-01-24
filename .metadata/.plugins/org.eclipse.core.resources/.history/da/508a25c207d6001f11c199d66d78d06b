@@ -1,0 +1,10 @@
+package cuneytemirr.hotel.rezervation.model;
+
+import cuneytemirr.hotel.rezervation.model.repository.UserRepository;
+
+public abstract class BaseModel {
+
+	public abstract UserRepository getUserRepository();
+	
+	
+}

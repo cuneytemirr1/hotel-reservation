@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+import cuneytemirr.hotel.rezervation.model.entity.User;
+import cuneytemirr.hotel.rezervation.model.repository.UserRepository;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		UserRepository repository = new UserRepository(new ArrayList<User>());
+		
+		repository.getUserList().add(new User(), new User());
+		
+		System.out.println(repository.getUserList().get(0).getUserId());
+		System.out.println(repository.getUserList().get(1).getUserId());
+	}
+	
+}

@@ -1,0 +1,9 @@
+package cuneytemirr.hotel.rezervation.model.repository;
+
+import java.util.LinkedList;
+
+public class UserRepository {
+	
+	private LinkedList<User> users;
+
+}

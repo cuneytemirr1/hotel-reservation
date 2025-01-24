@@ -1,0 +1,48 @@
+package cuneytemirr.hotel.rezervation.view;
+
+import cuneytemirr.hotel.rezervation.controller.AuthenticationController;
+import cuneytemirr.hotel.rezervation.model.entity.User;
+import cuneytemirr.hotel.rezervation.utils.ProcessUtils;
+
+public class LoginScreen {
+	
+	private ProcessUtils processUtils = ProcessUtils.getProcessUtilsInstance();
+	private AuthenticationController authenticationController = AuthenticationController.getAuthenticationControllerInstance();
+	
+	// Singleton yapısı
+	private static LoginScreen loginScreen;
+	private LoginScreen() {}
+	public static LoginScreen getLoginScreenInstance() {
+		
+		if (loginScreen == null) {
+			loginScreen = new LoginScreen();
+		}
+		
+		return loginScreen;
+	}
+	
+	public void loginView() {
+		System.out.println("Welcome to our Hotel Application!");
+		System.out.print("Please enter your username: ");
+		String username = processUtils.sc.nextLine();
+		System.out.print("Please enter your apssword: ");
+		String password = processUtils.sc.nextLine();
+		User user = authenticationController.loginControl();
+		
+		if (user != null) {
+			
+			if (user.getRole().equals("Admin")) {
+				
+			}else if (user.getRole().equals("Receptionist")) {
+				
+			}else {
+				System.out.println("Invalid Role");
+			}
+			
+		}else {
+			System.out.println("Username or Password is not correct");
+		}
+		
+	}
+
+}

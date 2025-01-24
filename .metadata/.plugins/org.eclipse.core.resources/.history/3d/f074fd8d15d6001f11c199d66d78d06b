@@ -1,0 +1,37 @@
+package cuneytemirr.hotel.rezervation.view;
+
+import cuneytemirr.hotel.rezervation.model.entity.User;
+
+public class MainViews {
+	
+	private static MainViews mainViews;
+	private MainViews() {
+		
+	}
+	public static MainViews getMainViewsInstance() {
+		if (mainViews == null) {
+			mainViews = new MainViews();
+		}
+		return mainViews;
+	}
+	public void getAdminView(User user) {
+		System.out.printf("Welcome %s", user.getUsername());
+		
+		do {
+			
+			System.out.println("1- Manage Users\n"
+					+ "2- Manage Rooms\n"
+					+ "3- Manage Reservations\n"
+					+ "Select Operation : ");
+			
+		}while(true);
+		
+	}
+	public void getReceptionistView(User user) {
+		System.out.printf("Welcome %s", user.getUsername());
+		
+
+		
+	}
+
+}

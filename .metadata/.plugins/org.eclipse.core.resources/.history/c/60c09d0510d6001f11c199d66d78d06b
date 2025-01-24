@@ -1,0 +1,11 @@
+import cuneytemirr.hotel.rezervation.view.LoginScreen;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		LoginScreen loginScreen = LoginScreen.getLoginScreenInstance();
+		
+	}
+	
+}

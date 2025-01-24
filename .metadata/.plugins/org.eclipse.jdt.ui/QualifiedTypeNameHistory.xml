@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="Main"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.entity.Reservation"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.BaseModel"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.repository.ReservationRepository"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.repository.RoomRepository"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.view.LoginScreen"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.controller.AuthenticationController"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.view.MainViews"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.view.UserView"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.view.RoomView"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.view.ReservationView"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.controller.ReservationController"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.controller.UserController"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.entity.User"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.utils.ProcessUtils"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.AnkaraModel"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.model.entity.Room"/>
+    <fullyQualifiedTypeName name="cuneytemirr.hotel.rezervation.controller.RoomController"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,48 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+import cuneytemirr.hotel.rezervation.model.AnkaraModel;
+import cuneytemirr.hotel.rezervation.model.entity.Room;
+
+public class RoomController {
+	
+	private AnkaraModel ankaraModel = AnkaraModel.getAnkaraModelInstance();
+	
+	//Singleton
+	private static RoomController roomController;
+	private RoomController() {}
+	public static RoomController getRoomControllerInstance() {
+		if (roomController == null) {
+			roomController = new RoomController();
+		}
+		return roomController;
+	}
+
+	public void add(String roomNumber, String category, int capacity, double price) {
+		ankaraModel.getRoomRepository().getRoomList().add(new Room(
+				ankaraModel.getRoomRepository().getHighestRoomId(),
+				roomNumber,
+				category,
+				capacity,
+				price
+				));
+	}
+	public void getAll() {
+		for (Room room : ankaraModel.getRoomRepository().getRoomList()) {
+			String isReserved;
+			if (room.isReserved()) {
+				isReserved = "Yes";
+			}else {
+				isReserved = "No";
+			}
+			System.out.printf("Room Number: %s, "
+					+ "Category: %s, "
+					+ "Capacity: %d, "
+					+ "Price: %f, "
+					+ "Reserved: %b"
+					+ "%n", room.getRoomNumber(), room.getCategory(), room.getCapacity(), room.getPrice(), isReserved);
+		}
+	}
+	
+	
+
+}

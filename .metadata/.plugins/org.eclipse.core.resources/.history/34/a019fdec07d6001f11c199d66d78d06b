@@ -1,0 +1,27 @@
+package cuneytemirr.hotel.rezervation.model;
+
+import cuneytemirr.hotel.rezervation.model.repository.ReservationRepository;
+import cuneytemirr.hotel.rezervation.model.repository.RoomRepository;
+import cuneytemirr.hotel.rezervation.model.repository.UserRepository;
+
+public class AnkaraModel extends BaseModel{
+
+	@Override
+	public UserRepository getUserRepository() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RoomRepository getRoomRepository() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ReservationRepository getReservationRepository() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,28 @@
+package cuneytemirr.hotel.rezervation.view;
+
+import java.util.Scanner;
+
+public class LoginScreen {
+	
+	// Singleton yapısı
+	private static LoginScreen loginScreen;
+	private LoginScreen() {}
+	public static LoginScreen getLoginScreenInstance() {
+		
+		if (loginScreen == null) {
+			loginScreen = new LoginScreen();
+		}
+		
+		return loginScreen;
+	}
+	
+	public void loginView() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Welcome to our Hotel Application!");
+		System.out.print("Please enter your username: ");
+		
+	}
+
+}

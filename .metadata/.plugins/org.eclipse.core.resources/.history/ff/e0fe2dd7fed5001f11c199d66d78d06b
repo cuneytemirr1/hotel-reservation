@@ -1,0 +1,5 @@
+package cuneytemirr.hotel.rezervation.model;
+
+public class Reservation {
+
+}

@@ -1,0 +1,17 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+public class AuthenticationController {
+	
+	// Singleton yapısı
+	private static AuthenticationController authenticationController;
+	private AuthenticationController() {
+		
+	}
+	public static AuthenticationController getAuthenticationControllerInstance() {
+		if (authenticationController == null) {
+			authenticationController = new AuthenticationController();
+		}
+		return authenticationController;
+	}
+
+}

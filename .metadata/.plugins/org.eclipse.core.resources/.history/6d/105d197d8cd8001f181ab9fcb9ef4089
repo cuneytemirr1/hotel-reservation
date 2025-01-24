@@ -1,0 +1,35 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+
+public class ReservationController {
+	
+	//Singleton
+	private static ReservationController reservationController;
+	private ReservationController() {}
+	public static ReservationController getReservationControllerInstance() {
+		if (reservationController == null) {
+			reservationController = new ReservationController();
+		}
+		return reservationController;
+	}
+	
+	public boolean isValidDate(String date) {
+		
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		try {
+			LocalDate.parse(date, formatter);
+			return true;
+		}catch (DateTimeParseException e) {
+			return false;
+		}
+	}
+	
+	public LocalDate dateFormatter(String date) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		return LocalDate.parse(date, formatter);
+	}
+
+}

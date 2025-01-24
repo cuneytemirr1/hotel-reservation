@@ -1,0 +1,11 @@
+package cuneytemirr.hotel.rezervation.model.repository;
+
+import java.util.List;
+
+import cuneytemirr.hotel.rezervation.model.entity.User;
+
+public class UserRepository {
+	
+	private List<User> users;
+
+}

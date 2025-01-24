@@ -1,0 +1,17 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+public class RoomController {
+	
+	//Singleton
+	private static RoomController roomController;
+	private RoomController() {}
+	public static RoomController getRoomControllerInstance() {
+		if (roomController == null) {
+			roomController = new RoomController();
+		}
+		return roomController;
+	}
+	
+	
+
+}

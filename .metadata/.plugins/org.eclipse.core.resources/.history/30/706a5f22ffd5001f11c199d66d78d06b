@@ -1,0 +1,10 @@
+package cuneytemirr.hotel.rezervation.model;
+
+public class User {
+	
+	int userId;
+	String username;
+	String password;
+	String role;
+
+}

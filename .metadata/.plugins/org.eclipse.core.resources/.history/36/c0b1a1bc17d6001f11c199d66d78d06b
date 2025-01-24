@@ -1,0 +1,62 @@
+package cuneytemirr.hotel.rezervation.view;
+
+import cuneytemirr.hotel.rezervation.model.entity.User;
+import cuneytemirr.hotel.rezervation.utils.ProcessUtils;
+
+public class MainViews {
+	
+	private ProcessUtils processUtils = ProcessUtils.getProcessUtilsInstance();
+	private UserView userView = UserView.getUserViewInstance();
+	private RoomView roomView = RoomView.getRoomViewInstance();
+	private ReservationView reservationView = ReservationView.getReservationViewInstance();
+	
+	private static MainViews mainViews;
+	private MainViews() {
+		
+	}
+	public static MainViews getMainViewsInstance() {
+		if (mainViews == null) {
+			mainViews = new MainViews();
+		}
+		return mainViews;
+	}
+	public void getAdminView(User user) {
+		System.out.printf("Welcome %s", user.getUsername());
+		
+		ADMINLABEL:
+		do {
+			
+			System.out.print("1- Manage Users\n"
+					+ "2- Manage Rooms\n"
+					+ "3- Manage Reservations\n"
+					+ "0- Logout\n"
+					+ "Select Operation : ");
+			String choice = processUtils.sc.nextLine();
+			
+			switch (choice) {
+			case "1":
+				userView.show();
+				break;
+			case "2":
+				roomView.show();
+				break;
+			case "3":
+				reservationView.show();
+				break;
+			case "0":
+				break ADMINLABEL;
+			default:
+				
+			}
+			
+		}while(true);
+		
+	}
+	public void getReceptionistView(User user) {
+		System.out.printf("Welcome %s", user.getUsername());
+		
+
+		
+	}
+
+}

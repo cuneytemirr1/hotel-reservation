@@ -1,0 +1,18 @@
+package cuneytemirr.hotel.rezervation.utils;
+
+import java.util.Scanner;
+
+public class ProcessUtils {
+	
+	private static ProcessUtils processUtils;
+	private ProcessUtils() {}
+	public ProcessUtils getProcessUtilsInstance() {
+		if (processUtils == null) {
+			processUtils = new ProcessUtils();
+		}
+		return processUtils;
+	}
+	
+	private Scanner sc;
+
+}

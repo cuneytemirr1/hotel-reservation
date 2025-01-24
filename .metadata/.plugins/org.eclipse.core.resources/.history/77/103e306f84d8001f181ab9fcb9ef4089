@@ -1,0 +1,33 @@
+package cuneytemirr.hotel.rezervation.controller;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+
+public class ReservationController {
+	
+	//Singleton
+	private static ReservationController reservationController;
+	private ReservationController() {}
+	public static ReservationController getReservationControllerInstance() {
+		if (reservationController == null) {
+			reservationController = new ReservationController();
+		}
+		return reservationController;
+	}
+	
+	public boolean isValidCheckIn(String date) {
+		boolean validDate = false;
+		while(!validDate) {
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+			try {
+				checkIn = LocalDate.parse(date, formatter);
+				validDate = true;
+			}catch (DateTimeParseException e) {
+				System.out.println("Invalid Date! Please Try Again");
+			}
+		}
+		return false;
+	}
+
+}

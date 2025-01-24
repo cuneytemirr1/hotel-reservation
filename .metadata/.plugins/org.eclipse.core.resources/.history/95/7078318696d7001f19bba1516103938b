@@ -1,0 +1,117 @@
+package cuneytemirr.hotel.rezervation.view;
+
+import cuneytemirr.hotel.rezervation.controller.UserController;
+import cuneytemirr.hotel.rezervation.utils.ProcessUtils;
+
+public class UserView {
+	
+	private ProcessUtils processUtils = ProcessUtils.getProcessUtilsInstance();
+	private UserController userController = UserController.getUserControllerInstance();
+	
+	// Singleton
+	private static UserView userView;
+	private UserView() {
+		
+	}
+	public static UserView getUserViewInstance( ) {
+		if (userView == null) {
+			userView = new UserView();
+		}
+		return userView;
+	}
+	
+	public void showAdmin() {
+		
+		System.out.println("Welcome to User Operations!");
+		
+		USERVIEW:
+		while(true) {
+			
+			System.out.print("1- Add User\n"
+					+ "2- Get All Users\n"
+					+ "3- Uptade User\n"
+					+ "4- Delete User\n"
+					+ "0- Back to Main Operations"
+					+ "Select Operation: ");
+			String choice = processUtils.sc.nextLine();
+			
+			switch(choice) {
+			case "1":
+				addUser();
+				break;
+			case "2":
+				getUsers();
+				break;
+			case "3":
+				uptadeUser();
+				break;
+			case "4":
+				deleteUser();
+				break;
+			case "0":
+				break USERVIEW;
+			default:
+				System.out.println("Invalid Operation!");
+			}
+			
+		}
+		
+	}
+	private void deleteUser() {
+		
+		System.out.print("Please Enter Username for Delete: ");
+		String username = processUtils.sc.nextLine();
+		
+		userController.isUserExist(username);
+		
+		userController.deleteUser(username);
+		
+	}
+	private void uptadeUser() {
+		
+		System.out.print("Please Enter Username for Uptade: ");
+		String username = processUtils.sc.nextLine();
+		
+		
+		System.out.print("1- Uptade Username\n"
+				+ "2- Uptade Password\n"
+				+ "3- Uptade Role\n"
+				+ "Select Operation: ");
+		
+		
+	}
+	private void getUsers() {
+		
+	}
+	private void addUser() {
+		
+		System.out.print("Please Enter Username: ");
+		String username = processUtils.sc.nextLine();
+		
+		System.out.println("Please Enter Password: ");
+		String password = processUtils.sc.nextLine();
+		
+		System.out.println("1- ADMIN\n"
+				+ "2- RECEPTIONIST\n"
+				+ "Select Role: ");
+		String role = processUtils.sc.nextLine();
+		ROLECHOICE:
+		do {
+			if (role.equals("1")) {
+				role = "Admin";
+				break ROLECHOICE;
+			}else if(role.equals("2")) {
+				role = "Receptionist";
+				break ROLECHOICE;
+			}else {
+				System.out.print("Invalid Number!\n"
+						+ "Please select 1 or 2: ");
+				role = processUtils.sc.nextLine();
+			}
+		}while(true);
+		
+		userController.createUser(username, password, role);
+		
+	}
+
+}
