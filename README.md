@@ -106,7 +106,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## 📞 Contact
 
-Cüneyt Emir - [@cuneytemirr1](https://github.com/cuneytemirr)
+Cüneyt Emir - [@cuneytemirr1](https://github.com/cuneytemirr1)
 
 Project Link: [https://github.com/cuneytemirr1/hotel-rezervation](https://github.com/cuneytemirr1/hotel-rezervation)
 
@@ -216,6 +216,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICEN
 
 ## 📞 İletişim
 
-Cüneyt Emir - [@cuneytemirr1](https://github.com/cuneytemirr)
+Cüneyt Emir - [@cuneytemirr1](https://github.com/cuneytemirr1)
 
 Proje Linki: [https://github.com/cuneytemirr1/hotel-rezervation](https://github.com/cuneytemirr1/hotel-rezervation) 
